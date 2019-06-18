@@ -325,10 +325,4 @@ public class CommonUtil {
 		return newString;
     }
     
-    public static void daoSearchPage(DaoSearch daoSearch) {
-    	if (null!=daoSearch.getCurrent() && null!=daoSearch.getPageSize()) {
-    		int startNum=(daoSearch.getCurrent()-1)*daoSearch.getPageSize()+1;
-			daoSearch.setStartNumber(startNum);
-		}
-    }
 }
